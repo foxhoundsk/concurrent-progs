@@ -20,7 +20,9 @@ bool is_power_of_2(const unsigned long n)
  * Alloc a ringbuf.
  *
  * @len Size of a single entry.
- * @cnt Counts of entries desired. Final length would be power-of-2.
+ * @cnt Amount of entries desired.
+ *
+ * The actual length of the ringbuf would be round-up to power-of-2.
  *
  * Return address pointing to the allocated ringbuf. NULL on failure,
  * check errno for details.
