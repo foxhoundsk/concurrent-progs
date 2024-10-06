@@ -1,7 +1,6 @@
 #ifndef _RING_BUF_H
 #define _RING_BUF_H
 
-#include <errno.h>
 #include <stdint.h>
 
 typedef struct rb {
